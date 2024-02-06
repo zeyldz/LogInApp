@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="LogInApp" customModuleProvider="target">
+            <connections>
+                <outlet property="DescLbl" destination="fWe-g1-X2V" id="KEg-6x-HLX"/>
+                <outlet property="DetailImg" destination="8AV-2W-WRR" id="hsm-oQ-kbb"/>
+                <outlet property="DetailVcLabel" destination="jii-8o-05z" id="g1R-by-Hio"/>
+                <outlet property="GenreLbl" destination="QyJ-Cp-Q1X" id="WUE-5y-gZX"/>
+                <outlet property="IDLbl" destination="NMH-Hc-r0s" id="WST-1e-tFd"/>
+                <outlet property="PlatformLbl" destination="nWK-0q-qEV" id="Ans-Kc-inf"/>
+                <outlet property="PublisherLbl" destination="O00-nB-zwC" id="rUq-mm-KtY"/>
+                <outlet property="ReleaseDateLbl" destination="b42-Dz-dX5" id="vVb-N4-NTK"/>
+                <outlet property="StatusLbl" destination="54L-8r-yHM" id="AvF-Na-GOB"/>
+                <outlet property="UrlLbl" destination="GH6-jZ-S1B" id="86o-9t-jTz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="DetailViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTh-Er-G0U">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8AV-2W-WRR">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="206"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="206" id="FyI-X9-pWH"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jii-8o-05z">
+                            <rect key="frame" x="45" y="232" width="263" height="42"/>
+                            <color key="backgroundColor" red="0.59175428389999996" green="0.3770883532" blue="1" alpha="0.4980335884" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="KEd-88-kUu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                            <color key="textColor" red="0.95347857979999995" green="0.99712862120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="shadowColor" red="0.1585214817973831" green="0.10429084384167442" blue="0.24951675257731953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMH-Hc-r0s">
+                            <rect key="frame" x="45" y="294" width="145" height="46"/>
+                            <color key="backgroundColor" red="0.8285256553766831" green="0.66891211018011143" blue="1" alpha="0.73541135204081631" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="145" id="3jE-v2-4yq"/>
+                                <constraint firstAttribute="height" constant="46" id="fzi-97-Iap"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028504769598" green="0.34917532590411476" blue="0.51407458118556704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54L-8r-yHM">
+                            <rect key="frame" x="203" y="294" width="145" height="46"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="145" id="1rn-y8-Ppy"/>
+                                <constraint firstAttribute="height" constant="46" id="onS-5J-frR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyJ-Cp-Q1X">
+                            <rect key="frame" x="45" y="343" width="145" height="46"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="145" id="EyH-iF-Rhw"/>
+                                <constraint firstAttribute="height" constant="46" id="I02-HB-aFf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="platform" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWK-0q-qEV">
+                            <rect key="frame" x="203" y="343" width="145" height="46"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="145" id="G4F-C1-CWz"/>
+                                <constraint firstAttribute="height" constant="46" id="z6B-jU-lRw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publisher" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O00-nB-zwC">
+                            <rect key="frame" x="45" y="392" width="145" height="46"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="3ud-o6-5mq"/>
+                                <constraint firstAttribute="width" constant="145" id="SPG-P4-IlP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="release date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b42-Dz-dX5">
+                            <rect key="frame" x="203" y="392" width="145" height="46"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="PYw-d6-ZjP"/>
+                                <constraint firstAttribute="width" constant="145" id="d1p-kc-UVt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWe-g1-X2V">
+                            <rect key="frame" x="63" y="460" width="266" height="170"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="266" id="5gX-ga-gug"/>
+                                <constraint firstAttribute="height" constant="170" id="VcP-U0-spT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="game url" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-jZ-S1B">
+                            <rect key="frame" x="45" y="652" width="303" height="46"/>
+                            <color key="backgroundColor" red="0.82852565540000001" green="0.66891211019999997" blue="1" alpha="0.73541135199999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="emG-50-yy8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.43792028500000002" green="0.3491753259" blue="0.51407458120000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <size key="shadowOffset" width="3" height="2"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNJ-TH-WJA">
+                            <rect key="frame" x="316" y="232" width="58" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.62352943419999995" green="0.50196081400000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" image="heart" catalog="system"/>
+                            <connections>
+                                <action selector="FavoriteBtn:" destination="-1" eventType="touchUpInside" id="wy2-yj-96i"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="fWe-g1-X2V" firstAttribute="top" secondItem="O00-nB-zwC" secondAttribute="bottom" constant="22" id="077-Lu-MQ1"/>
+                        <constraint firstAttribute="trailing" secondItem="b42-Dz-dX5" secondAttribute="trailing" constant="45" id="1Wa-nK-0E6"/>
+                        <constraint firstAttribute="trailing" secondItem="54L-8r-yHM" secondAttribute="trailing" constant="45" id="3rJ-8e-NZp"/>
+                        <constraint firstItem="NMH-Hc-r0s" firstAttribute="top" secondItem="jii-8o-05z" secondAttribute="bottom" constant="20" id="4JR-58-Vcs"/>
+                        <constraint firstAttribute="trailing" secondItem="jii-8o-05z" secondAttribute="trailing" constant="85" id="4jl-oC-Xr2"/>
+                        <constraint firstItem="b42-Dz-dX5" firstAttribute="top" secondItem="nWK-0q-qEV" secondAttribute="bottom" constant="3" id="Bw3-0s-eY8"/>
+                        <constraint firstItem="O00-nB-zwC" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" constant="45" id="FAs-Pg-AiP"/>
+                        <constraint firstItem="fWe-g1-X2V" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" constant="63" id="Gwa-mn-YwI"/>
+                        <constraint firstItem="GH6-jZ-S1B" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" constant="45" id="PQI-cf-FXb"/>
+                        <constraint firstAttribute="trailing" secondItem="GH6-jZ-S1B" secondAttribute="trailing" constant="45" id="Y2d-Xc-K0S"/>
+                        <constraint firstItem="O00-nB-zwC" firstAttribute="top" secondItem="QyJ-Cp-Q1X" secondAttribute="bottom" constant="3" id="bWy-bn-Xkm"/>
+                        <constraint firstItem="nWK-0q-qEV" firstAttribute="top" secondItem="54L-8r-yHM" secondAttribute="bottom" constant="3" id="dSm-Vb-SbB"/>
+                        <constraint firstItem="jii-8o-05z" firstAttribute="top" secondItem="8AV-2W-WRR" secondAttribute="bottom" constant="26" id="eYg-WK-Brt"/>
+                        <constraint firstItem="8AV-2W-WRR" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" id="gQ0-4h-YYh"/>
+                        <constraint firstItem="GH6-jZ-S1B" firstAttribute="top" secondItem="fWe-g1-X2V" secondAttribute="bottom" constant="22" id="gaE-Xk-nGm"/>
+                        <constraint firstItem="NMH-Hc-r0s" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" constant="45" id="jYt-Vt-sKL"/>
+                        <constraint firstAttribute="trailing" secondItem="nWK-0q-qEV" secondAttribute="trailing" constant="45" id="oXN-9X-pQQ"/>
+                        <constraint firstItem="QyJ-Cp-Q1X" firstAttribute="top" secondItem="NMH-Hc-r0s" secondAttribute="bottom" constant="3" id="p1b-Z5-abT"/>
+                        <constraint firstItem="QyJ-Cp-Q1X" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" constant="45" id="pb8-lO-jlu"/>
+                        <constraint firstAttribute="trailing" secondItem="8AV-2W-WRR" secondAttribute="trailing" id="rML-Oo-lGm"/>
+                        <constraint firstItem="8AV-2W-WRR" firstAttribute="top" secondItem="wTh-Er-G0U" secondAttribute="top" id="xRu-Gb-Rsk"/>
+                        <constraint firstItem="54L-8r-yHM" firstAttribute="top" secondItem="jii-8o-05z" secondAttribute="bottom" constant="20" id="xij-hk-B55"/>
+                        <constraint firstItem="jii-8o-05z" firstAttribute="leading" secondItem="wTh-Er-G0U" secondAttribute="leading" constant="45" id="yIa-fx-3YT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wTh-Er-G0U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5Tt-Tt-sQw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wTh-Er-G0U" secondAttribute="bottom" id="QuF-jG-X8N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wTh-Er-G0U" secondAttribute="trailing" id="pyl-Ql-bkv"/>
+                <constraint firstItem="wTh-Er-G0U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uvF-yx-6oj"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
